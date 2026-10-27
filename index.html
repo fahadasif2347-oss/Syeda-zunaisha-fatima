@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syeda Zunaisha Fatima | Birthday Invitation</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ENVELOPE INTRO SCREEN -->
+    <div class="invite-screen" id="inviteScreen" role="dialog" aria-modal="true" aria-label="Birthday invitation envelope">
+        <div class="invite-glow"></div>
+
+        <!-- Light burst & celebratory sparkles -->
+        <div class="light-burst" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+        </div>
+
+        <p class="invite-kicker">✨ YOU ARE CORDIALLY INVITED ✨</p>
+
+        <button class="envelope-button" id="openInvite" type="button" aria-label="Open birthday invitation">
+            <span class="envelope">
+                <span class="envelope-letter">
+                    <span class="letter-small">THE BIRTHDAY CELEBRATION OF</span>
+                    <span class="letter-names">Syeda Zunaisha<br><i>Fatima</i></span>
+                    <span class="letter-date">30 &middot; 10 &middot; 2026</span>
+                </span>
+                <span class="envelope-back"></span>
+                <span class="envelope-pocket"></span>
+                <span class="envelope-flap"></span>
+                <span class="envelope-seal">👑 <span>★</span> S</span>
+            </span>
+        </button>
+
+        <p class="tap-instruction">TAP THE ENVELOPE TO OPEN ✨</p>
+        <p class="invite-date">SUNDAY &middot; 30 OCTOBER 2026</p>
+    </div>
+
+    <!-- HERO SECTION -->
+    <header class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>✦ A VERY SPECIAL CELEBRATION ✦</span>
+            </div>
+            
+            <div class="hero-avatar-frame">
+                <img src="pics/1.jpeg" alt="Syeda Zunaisha Fatima" class="hero-avatar">
+                <div class="avatar-ring"></div>
+            </div>
+
+            <p class="eyebrow">Our Little Princess</p>
+            <h1>Syeda Zunaisha<br>Fatima</h1>
+            <p class="subtitle">Cordially invites you to celebrate her Birthday</p>
+
+            <div class="hero-meta-pill">
+                <span class="meta-item">📅 Sunday, 30 October 2026</span>
+                <span class="meta-dot">&bull;</span>
+                <span class="meta-item">📍 Saqlain House</span>
+            </div>
+        </div>
+        <a href="#story" class="scroll-down" aria-label="Scroll to discover">
+            <span class="scroll-text">SCROLL TO DISCOVER</span>
+            <span class="scroll-arrow">↓</span>
+        </a>
+    </header>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar" id="mainNav">
+        <a href="#home">Home</a>
+        <a href="#story">About Zunaisha</a>
+        <a href="#details">Celebration</a>
+        <a href="#gallery">Sweet Moments</a>
+        <a href="#venue">Venue &amp; Location</a>
+    </nav>
+
+    <!-- ABOUT SECTION -->
+    <section class="section" id="story">
+        <p class="eyebrow rose">OUR LITTLE PRINCESS</p>
+        <h2>A Bundle of Pure Joy &amp; Endless Smiles</h2>
+        <div class="divider"></div>
+        <p class="description">
+            Some moments in life are so precious that they must be celebrated with the people who mean the most.
+            Syeda Zunaisha Fatima fills our world with wonder, laughter, and pure happiness.
+            Please join our family for an evening filled with love, laughter, festive delights, and unforgettable memories!
+        </p>
+
+        <div class="photo-grid">
+            <div class="grid-card">
+                <img src="pics/WhatsApp Image 2026-10-27 at 11.53.30 PM.jpeg" alt="Syeda Zunaisha Fatima cute moment">
+                <div class="card-caption">Endless Smiles &amp; Sweet Giggles</div>
+            </div>
+            <div class="grid-card offset">
+                <img src="pics/WhatsApp Image 2026-10-27 at 11.53.31 PM.jpeg" alt="Syeda Zunaisha Fatima portrait">
+                <div class="card-caption">Our Pride &amp; Joy</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DETAILS & COUNTDOWN SECTION -->
+    <section class="section details" id="details">
+        <p class="eyebrow rose">SAVE THE SPECIAL DATE</p>
+        <h2>The Celebration Begins Soon!</h2>
+        <p class="description">Mark your calendars for an enchanting evening celebrating our little star.</p>
+
+        <!-- LIVE COUNTDOWN -->
+        <div class="countdown-wrapper">
+            <div class="countdown" id="countdownContainer">
+                <div class="countdown-box">
+                    <strong id="days">0</strong>
+                    <span>Days</span>
+                </div>
+                <div class="countdown-box">
+                    <strong id="hours">0</strong>
+                    <span>Hours</span>
+                </div>
+                <div class="countdown-box">
+                    <strong id="minutes">0</strong>
+                    <span>Minutes</span>
+                </div>
+                <div class="countdown-box">
+                    <strong id="seconds">0</strong>
+                    <span>Seconds</span>
+                </div>
+            </div>
+            <p class="countdown-note" id="countdownMessage">Counting down every second to Sunday, 30 October 2026!</p>
+        </div>
+
+        <!-- EVENT CARDS -->
+        <div class="cards">
+            <article class="detail-card">
+                <div class="card-icon">🎈</div>
+                <p class="eyebrow rose">THE GATHERING</p>
+                <h3>Welcome &amp; Fun</h3>
+                <!-- <p class="card-date">Sunday, 30 October 2026</p> -->
+                <!-- <p class="card-time">5:00 PM Onwards</p> -->
+                <p class="card-loc">Saqlain House</p>
+            </article>
+
+            <article class="detail-card highlight-card">
+                <div class="card-icon">🎂</div>
+                <p class="eyebrow rose">THE MAIN MOMENT</p>
+                <h3>Cake Cutting</h3>
+                <!-- <p class="card-date">Sunday, 30 October 2026</p> -->
+                <!-- <p class="card-time">7:00 PM</p> -->
+                <p class="card-loc">Make a wish with our birthday princess</p>
+            </article>
+
+            <article class="detail-card">
+                <div class="card-icon">✨</div>
+                <p class="eyebrow rose">FEAST &amp; JOY</p>
+                <h3>Dinner &amp; Sweets</h3>
+                <!-- <p class="card-date">Sunday, 30 October 2026</p> -->
+                <!-- <p class="card-time">8:00 PM Onwards</p> -->
+                <p class="card-loc">Delicious dinner &amp; celebrations</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- SWEET MOMENTS PHOTO GALLERY -->
+    <section class="section" id="gallery">
+        <p class="eyebrow rose">SWEET MEMORIES</p>
+        <h2>Moments of Our Angel</h2>
+        <p class="description">Click on any photo to view in high resolution</p>
+        
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="pics/1.jpeg" alt="Syeda Zunaisha Fatima Photo 1" loading="lazy">
+                <div class="gallery-hover-overlay"><span>🔍 View</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="pics/2.jpeg" alt="Syeda Zunaisha Fatima Photo 2" loading="lazy">
+                <div class="gallery-hover-overlay"><span>🔍 View</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="pics/3.jpeg" alt="Syeda Zunaisha Fatima Photo 3" loading="lazy">
+                <div class="gallery-hover-overlay"><span>🔍 View</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="pics/4.jpeg" alt="Syeda Zunaisha Fatima Photo 4" loading="lazy">
+                <div class="gallery-hover-overlay"><span>🔍 View</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="pics/5.jpeg" alt="Syeda Zunaisha Fatima Photo 5" loading="lazy">
+                <div class="gallery-hover-overlay"><span>🔍 View</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VENUE & LOCATION SECTION -->
+    <section class="section venue-section" id="venue">
+        <div class="venue-card">
+            <div class="venue-badge">LOCATION &amp; VENUE</div>
+            <h2>Saqlain House</h2>
+            <p class="venue-date">Sunday &middot; 30 October 2026</p>
+            <p class="venue-description">
+                We are eagerly looking forward to welcoming all our beloved family and friends at Saqlain House.
+                Your presence and heartfelt blessings will make this celebration complete!
+            </p>
+            <div class="venue-actions">
+                <a class="btn-primary" href="https://www.google.com/maps/search/?api=1&query=Saqlain+House" target="_blank" rel="noopener">
+                    <span>📍</span> Open Saqlain House in Google Maps &nearr;
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <p class="footer-title">With Warmth, Love &amp; Blessings</p>
+            <h3>Saqlain Family</h3>
+            <p class="footer-tagline">Celebrating Syeda Zunaisha Fatima &middot; 30 October 2026</p>
+            <p class="footer-sub">We can't wait to celebrate with you!</p>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX MODAL -->
+    <div id="imageLightbox" class="lightbox" role="dialog" aria-hidden="true" aria-label="Photo Preview">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close preview">&times;</button>
+        <img id="lightboxImg" src="" alt="Photo enlarged view">
+    </div>
+
+    <!-- BACKGROUND MUSIC -->
+    <button id="musicBtn" aria-label="Play or pause music" title="Play Birthday Melody">♫</button>
+    <audio id="bgMusic" loop preload="none"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
